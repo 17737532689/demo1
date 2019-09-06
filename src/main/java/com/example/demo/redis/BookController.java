@@ -19,8 +19,8 @@ public class BookController {
         String name = ops1.get("name");
         log.info(name);*/
 
-    // je.set("a","2");
-     //je.set("b","3");
+      je.set("a","2");
+     je.set("b","3");
 
 
     }
