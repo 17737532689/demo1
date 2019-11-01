@@ -1,6 +1,7 @@
 package com.example.demo.file;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -17,7 +18,7 @@ public class FileUploadController {
 
    SimpleDateFormat sdf =  new SimpleDateFormat("yyyy-MM-dd");
 
-   @PostMapping("/upload")
+   @GetMapping("/upload")
    public  String upload(MultipartFile uploadFile, HttpServletRequest req){
        String realPath = req.getSession().getServletContext().getRealPath("/uploadFile/");
        String format = sdf.format(new Date());
