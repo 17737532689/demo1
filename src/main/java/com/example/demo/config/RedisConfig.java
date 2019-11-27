@@ -7,17 +7,17 @@ import org.springframework.context.annotation.PropertySource;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-@PropertySource("classpath:application.properties")
-@Configuration
+//@PropertySource("classpath:application.properties")
+//@Configuration
 public class RedisConfig {
-    @Value("${spring.redis.host}")
+   /* @Value("${spring.redis.host}")
     private String host;
     @Value("${spring.redis.port}")
     private int port;
     @Value("${spring.redis.jedis.pool.max-idle}")
     private int maxIdle;
-   /* @Value("{ spring.redis.jedis.pool.min-idle}")
-   private int minIdle;*/
+   *//* @Value("{ spring.redis.jedis.pool.min-idle}")
+   private int minIdle;*//*
    @Value("${spring.redis.jedis.pool.max-wait}")
    private int maxWait;
 
@@ -29,5 +29,5 @@ public class RedisConfig {
      //  jedisPoolConfig.setMinIdle(minIdle);
         JedisPool jedisPool = new JedisPool(jedisPoolConfig, host, port);
         return jedisPool;
-    }
+    }*/
 }

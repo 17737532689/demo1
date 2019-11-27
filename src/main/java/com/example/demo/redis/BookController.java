@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+/*
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Slf4j
@@ -50,3 +51,4 @@ public class BookController {
         System.out.println("值"+responseEntity.getBody());
     }
 }
+*/
